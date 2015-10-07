@@ -32,13 +32,20 @@ header {
 }
 
 /*CONTENT*/
-#inicio {position:relative; height:740px;}
+#inicio {position:relative; margin:0 auto; padding:0; background:url(../imag/back/bg-inicio.jpg) 50% 0 repeat fixed; text-align:center; height:740px;}
 #inicio {
 	.bg {position:absolute; top:0; left:0; height:740px; overflow:hidden;}
 	#main-nav {position:absolute; width:100%; bottom:0; left:0; text-align:center;}
 	#main-nav {
 		ul li {display:inline-block; list-style-type:none; color:@white; text-transform:uppercase;}
 		a {color:@white;}
+	}
+	.cont-site {padding:200px 0 0; text-align:center;}
+	.cont-site {
+		h1 {text-align:center;}
+		h3 {margin:0 0 15px; color:@white; font-size:16px; text-transform:none;}
+		img {margin:0 auto 40px;}
+		a.descargar {margin:50px 0 0; color:@white; border:2px solid @white;}
 	}
 }
 #intro {padding:100px 0; border-bottom:1px solid @border-grey;}
@@ -85,8 +92,11 @@ header {
 	.item-social:first-child {margin-right:15px !important;}
 	.item-social:last-child {margin-left:15px !important;}
 	.item-social a {position:relative; display:block; .rounded-corners (@radius:10px); min-height:300px; max-height:300px; overflow:hidden; -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);}
-	.item-social .shadow {position:absolute; width:100%; height:70px; background:url(../imag/back/bg-title.png) repeat-x left bottom; z-index:500;}
-	.item-social h4 {position:absolute; display:block; width:100%; padding:0 70px; color:@white; bottom:25px; text-align:center; font-weight:700; font-size:25px; z-index:1000;}
+	.item-social {
+		h4 {position:absolute; display:block; width:100%; padding:0 70px; color:@white; bottom:25px; text-align:center; font-weight:700; font-size:25px; z-index:1000;}
+		a:hover h4 {color:@pink;}
+		.shadow {position:absolute; bottom:0; width:100%; height:150px; background:url(../imag/back/bg-title.png) repeat-x left bottom; z-index:500;}
+	}
 	h5 {margin:0 0 30px; font-size:18px; font-weight:600; color:@base-blue;}
 	p {margin:0 0 30px;}
 	ul li {margin:0 0 25px;}
@@ -107,6 +117,34 @@ header {
 	a.descargar {display:inline-block; padding:8px 30px; font-size:13px; font-weight:700; .rounded-corners (@radius:5px); border:2px solid @base-blue; text-transform:uppercase;}
 	a.descargar:hover {background:@pink; color:@white !important; border:2px solid @pink;}
 }
+
+/*AUXI STYLES*/
+.hidden-div {display:none;}
+.b-close {border-radius:7px; font:bold 131% sans-serif; padding:0 6px 2px; background-color:#2b91af; color:#fff;
+cursor:pointer;
+text-align:center;
+text-decoration:none;
+position:absolute;
+right:-7px;
+top:-7px;
+}
+.b-close:hover {background-color:#1e1e1e;}
+#cv-johan, #cv-jana, #cv-hadi, #cv-harry, #cv-luciano, #cv-freddy, #cv-rosemary, #cv-trevor, .bMulti {min-height: 250px;}
+#cv-johan, #cv-jana, #cv-hadi, #cv-harry, #cv-luciano, #cv-freddy, #cv-rosemary, #cv-trevor, .bMulti {
+    background-color:#fff;
+    border-radius:10px 10px 10px 10px;
+    box-shadow:0 0 25px 5px #999;
+    color:#111;
+    display:none;
+    min-width:450px;
+    max-width:600px;
+    padding:25px 25px 35px;
+}
+.bMulti {
+	h4 {margin:5px 0 30px; font-size:25px; font-weight:600;}
+	p {font-size:13px;}
+}
+.b-modal {background-color:#354d60 !important;}
 
 /*FOOTER*/
 footer {width:100%; display:block; padding:35px 0; background:@foot-blue; color:@white; clear:both;}
