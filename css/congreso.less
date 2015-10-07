@@ -43,7 +43,7 @@ header {
 		a {padding:0 10px; color:@white; font-size:16px; text-transform:uppercase;}
 		a:hover {color:@pink; background:none;}
 	}
-	#main-nav.affix {position:fixed; top:0; width:100%; z-index:1000; height:47px;}
+	#main-nav.affix {position:fixed; top:0px; width:100%; z-index:1000; height:47px;}
 	.navbar {margin:0; min-height:auto;}
 	.cont-site {padding:200px 0 0; text-align:center;}
 	.cont-site {
@@ -51,6 +51,7 @@ header {
 		h3 {margin:0 0 15px; color:@white; font-size:16px; text-transform:none;}
 		img {margin:0 auto 40px;}
 		a.descargar {margin:50px 0 0; color:@white; border:2px solid @white;}
+		a.descargar:hover {background:@base-blue;}
 	}
 }
 #intro {padding:100px 0; border-bottom:1px solid @border-grey;}
@@ -78,11 +79,14 @@ header {
 	.media {text-align:center;}
 	.media .item-logo {float:none; margin:0 auto;}
 }
-#programa {padding:90px 0; text-align:center; border-bottom:1px solid @border-grey; background:url(../imag/back/bg-logo.png) no-repeat 870px 450px @back-grey;}
+#programa {padding:90px 0; text-align:center; border-bottom:1px solid @border-grey; background:/*url(../imag/back/bg-logo.png) no-repeat 870px 450px*/ @back-grey;}
 #programa {
 	h4 {margin:0 5px 25px; text-align:left; text-transform:uppercase;}
 	ul {margin:0; padding:0;}
 	ul li {margin:0 5px 20px; font-size:13px; list-style-type:none; line-height:120%;}
+	.cont-pre {margin:40px 0 0;}
+	.cont-pre div:first-child {padding-left:0;}
+	.cont-pre div:last-child {padding-right:0;}
 	.cont-programa div {text-align:left;}
 }
 #bases {padding:90px 0; background:@light-blue; text-align:center; border-bottom:1px solid @border-grey;}
@@ -144,7 +148,7 @@ header {
 		div:last-child {padding-right:0;}
 	}
 	label {margin:0; padding:0 0 8px; font-size:14px; color:@dark-grey; font-weight:400; text-align:left;}
-	input[type="text"], input[type="email"], select {padding:5px 10px; font-size:14px; color:@medium-grey; height:40px;}
+	input[type="text"], input[type="email"], input[type="telefono"], select {padding:5px 10px; font-size:14px; color:@medium-grey; height:40px;}
 }
 
 /*AUXI STYLES*/
@@ -165,7 +169,7 @@ header {
 	h4 {margin:5px 0 30px; font-size:25px; font-weight:600;}
 	p {font-size:13px;}
 }
-.b-modal {background-color:#354d60 !important;}
+.b-modal {background-color:#293e4f !important;}
 
 /*FOOTER*/
 footer {width:100%; display:block; padding:35px 0; background:@foot-blue; color:@white; clear:both;}

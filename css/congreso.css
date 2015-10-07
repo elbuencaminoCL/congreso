@@ -75,7 +75,7 @@ header {
 }
 #inicio #main-nav.affix {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   z-index: 1000;
   height: 47px;
@@ -104,6 +104,9 @@ header {
   margin: 50px 0 0;
   color: #ffffff;
   border: 2px solid #ffffff;
+}
+#inicio .cont-site a.descargar:hover {
+  background: #0066ff;
 }
 #intro {
   padding: 100px 0;
@@ -192,7 +195,7 @@ header {
   padding: 90px 0;
   text-align: center;
   border-bottom: 1px solid #bebdbd;
-  /*background: url(../imag/back/bg-logo.png) no-repeat 870px 450px #eae8e8;*/
+  background: #eae8e8;
 }
 #programa h4 {
   margin: 0 5px 25px;
@@ -208,6 +211,15 @@ header {
   font-size: 13px;
   list-style-type: none;
   line-height: 120%;
+}
+#programa .cont-pre {
+  margin: 40px 0 0;
+}
+#programa .cont-pre div:first-child {
+  padding-left: 0;
+}
+#programa .cont-pre div:last-child {
+  padding-right: 0;
 }
 #programa .cont-programa div {
   text-align: left;
@@ -419,6 +431,7 @@ header {
 }
 .cont-formulario input[type="text"],
 .cont-formulario input[type="email"],
+.cont-formulario input[type="telefono"],
 .cont-formulario select {
   padding: 5px 10px;
   font-size: 14px;
@@ -483,7 +496,7 @@ header {
   font-size: 13px;
 }
 .b-modal {
-  background-color: #354d60 !important;
+  background-color: #293e4f !important;
 }
 /*FOOTER*/
 footer {
