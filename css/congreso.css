@@ -48,6 +48,7 @@ header {
   text-align: center;
   padding: 12px 0;
   background: url(../imag/back/bg-nav.png) repeat left top;
+  z-index: 900;
 }
 #inicio #main-nav ul {
   margin: 0;
@@ -64,6 +65,21 @@ header {
   color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
+}
+#inicio #main-nav a:hover {
+  color: #c96565;
+  background: none;
+}
+#inicio #main-nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 47px;
+}
+#inicio .navbar {
+  margin: 0;
+  min-height: auto;
 }
 #inicio .cont-site {
   padding: 200px 0 0;
@@ -151,7 +167,7 @@ header {
 }
 #organizadores,
 #auspiciadores {
-  padding: 90px 0;
+  padding: 80px 0 90px;
   text-align: center;
   border-bottom: 1px solid #bebdbd;
 }
@@ -251,7 +267,7 @@ header {
   text-align: center;
   font-weight: 700;
   font-size: 25px;
-  z-index: 1000;
+  z-index: 900;
 }
 #social .item-social a:hover h4 {
   color: #c96565;
@@ -264,23 +280,28 @@ header {
   background: url(../imag/back/bg-title.png) repeat-x left bottom;
   z-index: 500;
 }
-#social h5 {
+#social .cont-description {
+  padding: 0 25px;
+  text-align: left;
+}
+#social .cont-description h5 {
   margin: 0 0 30px;
   font-size: 18px;
   font-weight: 600;
   color: #1a72bc;
 }
-#social p {
+#social .cont-description p {
   margin: 0 0 30px;
 }
-#social ul li {
+#social .cont-description ul li {
   margin: 0 0 25px;
+  padding: 0;
 }
 #ubicacion {
   position: relative;
   height: 740px;
   overflow: hidden;
-  background: url(../imag/back/bg-campus.jpg) 50% -180px no-repeat fixed !important;
+  background: url(../imag/back/bg-campus.jpg) 50% -250px no-repeat fixed !important;
   border-bottom: 1px solid #bebdbd;
 }
 #ubicacion .bg {
@@ -294,7 +315,7 @@ header {
   position: relative;
   padding: 90px 0;
   background: url(../imag/back/bg-section.png) repeat left top;
-  z-index: 1000;
+  z-index: 800;
   min-height: 740px;
   text-align: center;
 }

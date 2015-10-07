@@ -26,6 +26,11 @@
 		$('#intro').parallax("50%", 0.3);
 		$('#ubicacion').parallax("50%", 0.1);
 		$('#auspiciadores').parallax("50%", 0.3);
+		$('#main-nav').affix({
+		    offset: {
+		        top: $('#inicio').height()
+		    }
+		});	
 	})
 </script>
 <script src="js/jquery.bpopup-0.11.0.min.js"></script>
@@ -96,20 +101,29 @@
 							</div>
 						</div>
 					</div>
-					<nav id="main-nav">
-						<div class="container">
-					    	<ul>
-					    		<li><a href="#">Acerca de</a></li>
-					    		<li><a href="#">Expositores</a></li>
-					    		<li><a href="#">Programa</a></li>
-					    		<li><a href="#">Poster Program</a></li>
-					    		<li><a href="#">Programa Social</a></li>
-					    		<li><a href="#">Ubicación</a></li>
-					    		<li><a href="#">Información de Viaje</a></li>
-					    		<li><a href="#">Contacto</a></li>
-					    	</ul>
-					    </div>
-				    </nav>
+					<div id="main-nav">
+					  	<div class="navbar navbar-static">
+					    	<div class="container">
+							    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							        <span class="glyphicon glyphicon-bar"></span>
+							        <span class="glyphicon glyphicon-bar"></span>
+							        <span class="glyphicon glyphicon-bar"></span>
+							    </a>
+					      		<div class="navbar-collapse collapse">
+					        		<ul class="nav navbar-nav">
+							          	<li><a href="#">Acerca de</a></li>
+							    		<li><a href="#">Expositores</a></li>
+							    		<li><a href="#">Programa</a></li>
+							    		<li><a href="#">Poster Program</a></li>
+							    		<li><a href="#">Programa Social</a></li>
+							    		<li><a href="#">Ubicación</a></li>
+							    		<li><a href="#">Información de Viaje</a></li>
+							    		<li><a href="#">Contacto</a></li>
+					        		</ul>
+					      		</div>		
+					    	</div>
+					  	</div>
+					</div>
 				</div>
 				<div id="intro">
 					<div class="container clearfix">
@@ -298,25 +312,27 @@
 						<div class="cont-social col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<h3>Conoce y participa de nuestro programa social</h3>
 							<div class="clearfix">
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<div class="item-social">
-										<a href="#">
-											<img src="imag/demo/foto-social01.jpg" alt="" class="img-responsive" />
-											<h4>Vino de Honor Universidad de los Andes</h4>
-											<div class="shadow"></div>
-										</a>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="item-social">
+											<a href="#">
+												<img src="imag/demo/foto-social01.jpg" alt="" class="img-responsive" />
+												<h4>Vino de Honor Universidad de los Andes</h4>
+												<div class="shadow"></div>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<div class="item-social">
+											<a href="#">
+												<img src="imag/demo/foto-social02.jpg" alt="" class="img-responsive" />
+												<h4>Recorrido por Viña Santa Rita</h4>
+												<div class="shadow"></div>
+											</a>
+										</div>
 									</div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<div class="item-social">
-										<a href="#">
-											<img src="imag/demo/foto-social02.jpg" alt="" class="img-responsive" />
-											<h4>Recorrido por Viña Santa Rita</h4>
-											<div class="shadow"></div>
-										</a>
-									</div>
-								</div>
-								<div class="clearfix row">
+								<div class="cont-description clearfix row">
 									<h5>Valor de la adhesión al Programa Social (No incluido en el valor del Congreso): $65.000</h5>
 									<p>El Programa Social incluye:</p>
 									<ul>
