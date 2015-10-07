@@ -46,6 +46,12 @@ header {
   bottom: 0;
   left: 0;
   text-align: center;
+  padding: 12px 0;
+  background: url(../imag/back/bg-nav.png) repeat left top;
+}
+#inicio #main-nav ul {
+  margin: 0;
+  padding: 0;
 }
 #inicio #main-nav ul li {
   display: inline-block;
@@ -54,7 +60,10 @@ header {
   text-transform: uppercase;
 }
 #inicio #main-nav a {
+  padding: 0 10px;
   color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 #inicio .cont-site {
   padding: 200px 0 0;
@@ -145,6 +154,19 @@ header {
   padding: 90px 0;
   text-align: center;
   border-bottom: 1px solid #bebdbd;
+}
+#organizadores h3 {
+  margin-bottom: 30px;
+}
+#organizadores .item-logo {
+  margin: 0 0 60px;
+}
+#organizadores .media {
+  text-align: center;
+}
+#organizadores .media .item-logo {
+  float: none;
+  margin: 0 auto;
 }
 #programa {
   padding: 90px 0;
@@ -258,6 +280,7 @@ header {
   position: relative;
   height: 740px;
   overflow: hidden;
+  background: url(../imag/back/bg-campus.jpg) 50% -180px no-repeat fixed !important;
   border-bottom: 1px solid #bebdbd;
 }
 #ubicacion .bg {

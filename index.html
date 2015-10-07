@@ -24,6 +24,8 @@
 	$(document).ready(function(){
 		$('#inicio').parallax("50%", 0.1);
 		$('#intro').parallax("50%", 0.3);
+		$('#ubicacion').parallax("50%", 0.1);
+		$('#auspiciadores').parallax("50%", 0.3);
 	})
 </script>
 <script src="js/jquery.bpopup-0.11.0.min.js"></script>
@@ -95,16 +97,18 @@
 						</div>
 					</div>
 					<nav id="main-nav">
-				    	<ul>
-				    		<li>Acerca de</li>
-				    		<li>Expositores</li>
-				    		<li>Programa</li>
-				    		<li>Poster Program</li>
-				    		<li>Programa Social</li>
-				    		<li>Ubicación</li>
-				    		<li>Información de Viaje</li>
-				    		<li>Contacto</li>
-				    	</ul>
+						<div class="container">
+					    	<ul>
+					    		<li><a href="#">Acerca de</a></li>
+					    		<li><a href="#">Expositores</a></li>
+					    		<li><a href="#">Programa</a></li>
+					    		<li><a href="#">Poster Program</a></li>
+					    		<li><a href="#">Programa Social</a></li>
+					    		<li><a href="#">Ubicación</a></li>
+					    		<li><a href="#">Información de Viaje</a></li>
+					    		<li><a href="#">Contacto</a></li>
+					    	</ul>
+					    </div>
 				    </nav>
 				</div>
 				<div id="intro">
@@ -202,12 +206,33 @@
 						<div class="cont-org col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<h3>Organizadores</h3>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item-logo">
+									<img src="imag/logo/sociedad.png" alt="Sociedad de Prótesis y Rehabilitación Oral de Chile" class="img-responsive" />
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item-logo">
+									<img src="imag/logo/ismr.png" alt="ISMR" class="img-responsive" />
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item-logo">
+									<img src="imag/logo/orema.png" alt="Clínica OREMA" class="img-responsive" />
+								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<h3>Patrocinadores</h3>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item-logo">
+									<img src="imag/logo/uandes.jpg" alt="Universidad de Los Andes" class="img-responsive" />
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item-logo">
+									<img src="imag/logo/sociedad.png" alt="Sociedad de Prótesis y Rehabilitación Oral de Chile" class="img-responsive" />
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item-logo">
+									<img src="imag/logo/sociedad.png" alt="Sociedad de Prótesis y Rehabilitación Oral de Chile" class="img-responsive" />
+								</div>
 							</div>
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 media">
 								<h3>Media Partner</h3>
+								<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 item-logo">
+									<img src="imag/logo/club.png" alt="Club de Lectores El Mercurio" class="img-responsive" />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -307,9 +332,6 @@
 					</div>
 				</div>
 				<div id="ubicacion">
-					<div class="bg cont-site col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
-						<img src="imag/back/bg-campus.jpg" alt="" class="img-responsive" />
-					</div>
 					<div class="cont-layer">
 						<div class="container clearfix">
 							<div class="cont-ubicacion col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -358,6 +380,26 @@
 				<div id="auspiciadores">
 					<div class="container clearfix">
 						<h3>Auspiciadores</h3>
+						<div class="cont-org col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 item-logo">
+								<img src="imag/logo/sociedad.png" alt="Sociedad de Prótesis y Rehabilitación Oral de Chile" class="img-responsive" />
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 item-logo">
+								<img src="imag/logo/ismr.png" alt="ISMR" class="img-responsive" />
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 item-logo">
+								<img src="imag/logo/orema.png" alt="Clínica OREMA" class="img-responsive" />
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 item-logo">
+								<img src="imag/logo/uandes.jpg" alt="Universidad de Los Andes" class="img-responsive" />
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 item-logo">
+								<img src="imag/logo/sociedad.png" alt="Sociedad de Prótesis y Rehabilitación Oral de Chile" class="img-responsive" />
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 item-logo">
+								<img src="imag/logo/sociedad.png" alt="Sociedad de Prótesis y Rehabilitación Oral de Chile" class="img-responsive" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

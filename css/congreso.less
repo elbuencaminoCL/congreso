@@ -35,10 +35,11 @@ header {
 #inicio {position:relative; margin:0 auto; padding:0; background:url(../imag/back/bg-inicio.jpg) 50% 0 repeat fixed; text-align:center; height:740px;}
 #inicio {
 	.bg {position:absolute; top:0; left:0; height:740px; overflow:hidden;}
-	#main-nav {position:absolute; width:100%; bottom:0; left:0; text-align:center;}
+	#main-nav {position:absolute; width:100%; bottom:0; left:0; text-align:center; padding:12px 0; background:url(../imag/back/bg-nav.png) repeat left top;}
 	#main-nav {
+		ul {margin:0; padding:0;}
 		ul li {display:inline-block; list-style-type:none; color:@white; text-transform:uppercase;}
-		a {color:@white;}
+		a {padding:0 10px; color:@white; font-size:16px; text-transform:uppercase;}
 	}
 	.cont-site {padding:200px 0 0; text-align:center;}
 	.cont-site {
@@ -68,7 +69,10 @@ header {
 }
 #organizadores, #auspiciadores {padding:90px 0; text-align:center; border-bottom:1px solid @border-grey;}
 #organizadores {
-	
+	h3 {margin-bottom:30px;}
+	.item-logo {margin:0 0 60px;}
+	.media {text-align:center;}
+	.media .item-logo {float:none; margin:0 auto;}
 }
 #programa {padding:90px 0; text-align:center; border-bottom:1px solid @border-grey; background:url(../imag/back/bg-logo.png) no-repeat 870px 450px @back-grey;}
 #programa {
@@ -101,7 +105,7 @@ header {
 	p {margin:0 0 30px;}
 	ul li {margin:0 0 25px;}
 }
-#ubicacion {position:relative; height:740px; overflow:hidden; border-bottom:1px solid @border-grey;}
+#ubicacion {position:relative; height:740px; overflow:hidden; background:url(../imag/back/bg-campus.jpg) 50% -250px no-repeat fixed !important; border-bottom:1px solid @border-grey;}
 #ubicacion {
 	.bg {position:absolute; top:0; left:0; height:740px; overflow:hidden;}
 	.cont-layer {position:relative; padding:90px 0; background:url(../imag/back/bg-section.png) repeat left top; z-index:1000; min-height:740px; text-align:center;}
