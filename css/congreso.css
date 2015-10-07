@@ -192,7 +192,7 @@ header {
   padding: 90px 0;
   text-align: center;
   border-bottom: 1px solid #bebdbd;
-  background: url(../imag/back/bg-logo.png) no-repeat 870px 450px #eae8e8;
+  /*background: url(../imag/back/bg-logo.png) no-repeat 870px 450px #eae8e8;*/
 }
 #programa h4 {
   margin: 0 5px 25px;
