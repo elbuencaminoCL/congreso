@@ -280,8 +280,11 @@ header {
   background: url(../imag/back/bg-title.png) repeat-x left bottom;
   z-index: 500;
 }
+#social .item-social img {
+  width: 100%;
+}
 #social .cont-description {
-  padding: 0 25px;
+  padding: 0 30px;
   text-align: left;
 }
 #social .cont-description h5 {
@@ -293,15 +296,19 @@ header {
 #social .cont-description p {
   margin: 0 0 30px;
 }
+#social .cont-description ul {
+  margin: 0 0 0 18px;
+  padding: 0;
+}
 #social .cont-description ul li {
   margin: 0 0 25px;
   padding: 0;
 }
 #ubicacion {
   position: relative;
-  height: 740px;
+  height: 700px;
   overflow: hidden;
-  background: url(../imag/back/bg-campus.jpg) 50% -250px no-repeat fixed !important;
+  background: url(../imag/back/bg-campus.jpg) 50% -300px no-repeat fixed !important;
   border-bottom: 1px solid #bebdbd;
 }
 #ubicacion .bg {
@@ -313,7 +320,7 @@ header {
 }
 #ubicacion .cont-layer {
   position: relative;
-  padding: 90px 0;
+  padding: 90px 0 40px;
   background: url(../imag/back/bg-section.png) repeat left top;
   z-index: 800;
   min-height: 740px;
@@ -329,7 +336,9 @@ header {
 #ubicacion .recuadro .img-ubica {
   margin: 0 auto 20px;
   max-width: 175px;
+  width: 175px;
   max-height: 175px;
+  height: 175px;
   overflow: hidden;
 }
 #ubicacion .recuadro .img-ubica img {
@@ -340,6 +349,8 @@ header {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  height: 175px;
+  width: auto;
 }
 .cont-button {
   display: block;

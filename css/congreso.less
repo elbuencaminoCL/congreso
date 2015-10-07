@@ -105,22 +105,23 @@ header {
 		.shadow {position:absolute; bottom:0; width:100%; height:150px; background:url(../imag/back/bg-title.png) repeat-x left bottom; z-index:500;}
 		img {width:100%;}
 	}
-	.cont-description {padding:0 25px; text-align:left;}
+	.cont-description {padding:0 30px; text-align:left;}
 	.cont-description {
 		h5 {margin:0 0 30px; font-size:18px; font-weight:600; color:@base-blue;}
 		p {margin:0 0 30px;}
+		ul {margin:0 0 0 18px; padding:0;}
 		ul li {margin:0 0 25px; padding:0;}
 	}
 }
-#ubicacion {position:relative; height:740px; overflow:hidden; background:url(../imag/back/bg-campus.jpg) 50% -250px no-repeat fixed !important; border-bottom:1px solid @border-grey;}
+#ubicacion {position:relative; height:700px; overflow:hidden; background:url(../imag/back/bg-campus.jpg) 50% -300px no-repeat fixed !important; border-bottom:1px solid @border-grey;}
 #ubicacion {
 	.bg {position:absolute; top:0; left:0; height:740px; overflow:hidden;}
-	.cont-layer {position:relative; padding:90px 0; background:url(../imag/back/bg-section.png) repeat left top; z-index:800; min-height:740px; text-align:center;}
+	.cont-layer {position:relative; padding:90px 0 40px; background:url(../imag/back/bg-section.png) repeat left top; z-index:800; min-height:740px; text-align:center;}
 	.recuadro {margin:70px 0;}
 	.recuadro {
 		h4 {font-size:16px; font-weight:600;}
-		.img-ubica {margin:0 auto 20px; max-width:175px; max-height:175px; overflow:hidden;}
-		.img-ubica img {margin:0 auto; border:1px solid @border-grey; .rounded-corners (@radius:5px);}
+		.img-ubica {margin:0 auto 20px; max-width:175px; width:175px; max-height:175px; height:175px; overflow:hidden;}
+		.img-ubica img {margin:0 auto; border:1px solid @border-grey; .rounded-corners (@radius:5px); height:175px; width:auto;}
 	}
 }
 .cont-button {display:block; margin:0;}
