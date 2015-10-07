@@ -22,8 +22,8 @@
 body {font-family:@family;}
 h3 {margin:0 0 50px; font-size:25px; font-weight:600; color:@base-blue; text-transform:uppercase; line-height:140%;}
 h4 {color:@base-blue;}
-a {color:@base-blue;}
-a:hover {text-decoration:none;}
+a {color:@base-blue; cursor:pointer;}
+a:hover {text-decoration:none; background:none;}
 .cont-site {padding:0;}
 
 /*HEADER*/
@@ -36,12 +36,12 @@ header {
 #inicio {position:relative; margin:0 auto; padding:0; background:url(../imag/back/bg-santiago2.jpg) 50% 0 repeat fixed; text-align:center; height:740px;}
 #inicio {
 	.bg {position:absolute; top:0; left:0; height:740px; overflow:hidden;}
-	#main-nav {position:absolute; width:100%; bottom:0; left:0; text-align:center; padding:12px 0; background:url(../imag/back/bg-nav.png) repeat left top; z-index:900;}
+	#main-nav {position:absolute; width:100%; bottom:0; left:0; text-align:center; padding:12px 0; background:url(../imag/back/bg-nav.png) repeat left top; z-index:900; height:47px;}
 	#main-nav {
 		ul {margin:0; padding:0;}
 		ul li {display:inline-block; list-style-type:none; color:@white; text-transform:uppercase;}
-		a {padding:0 10px; color:@white; font-size:16px; text-transform:uppercase;}
-		a:hover {color:@pink; background:none;}
+		a, #form-contact {padding:0 10px; color:@white; font-size:16px; text-transform:uppercase; cursor:pointer;}
+		a:hover {color:@base-blue; background:none;}
 	}
 	#main-nav.affix {position:fixed; top:0px; width:100%; z-index:1000; height:47px;}
 	.navbar {margin:0; min-height:auto;}
@@ -51,7 +51,7 @@ header {
 		h3 {margin:0 0 15px; color:@white; font-size:16px; text-transform:none;}
 		img {margin:0 auto 40px;}
 		a.descargar {margin:50px 0 0; color:@white; border:2px solid @white;}
-		a.descargar:hover {background:@base-blue;}
+		a.descargar:hover {background:@base-blue; border:2px solid @base-blue;}
 	}
 }
 #intro {padding:100px 0; border-bottom:1px solid @border-grey;}
@@ -138,9 +138,10 @@ header {
 
 /*FORMS*/
 .bform {width:650px !important; background:@back-grey !important;}
-.cont-formulario {width:600px; padding:0 0 80px;}
+.cont-formulario {width:600px; padding:0;}
 .cont-formulario {
 	h3.title {margin:10px 0 30px; text-align:center;}
+	h4 {font-size:18px !important;}
 	.excerpt {margin:0 0 20px; font-size:14px; text-align:center; color:@base-blue;}
 	.separa {margin:0 0 30px;}
 	.separa {
@@ -149,6 +150,14 @@ header {
 	}
 	label {margin:0; padding:0 0 8px; font-size:14px; color:@dark-grey; font-weight:400; text-align:left;}
 	input[type="text"], input[type="email"], input[type="telefono"], select {padding:5px 10px; font-size:14px; color:@medium-grey; height:40px;}
+	.cont-button {margin:0 0 50px; text-align:center;}
+	.cont-button a {margin:0 auto; background:@base-blue; color:@white;}
+	.cont-button a:hover {background:@pink;}
+	.content-valores {margin:0 0 50px;}
+	.content-valores {
+		h4 {margin-bottom:25px;}
+		p {margin:0 0 5px;}
+	}
 }
 
 /*AUXI STYLES*/
