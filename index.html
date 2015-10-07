@@ -35,7 +35,7 @@
 </script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('a[href^="#"]').on('click',function (e) {
+		$('#main-nav a[href^="#"]').on('click',function (e) {
 		    e.preventDefault();
 		    var target = this.hash;
 		    var $target = $(target);
@@ -83,10 +83,15 @@
             });
             $('#pop-rosemary').bind('click', function(e) {
 				e.preventDefault();
-				$('#cv-rosemary').bPopup({
-		            positionStyle: 'fixed'
-		        });
+				$('#cv-rosemary').bPopup();
             });
+            $('#inscripciones').bind('click', function(e) {
+				e.preventDefault();
+            	$('#form-inscripcion').bPopup({
+	            	contentContainer:'.content',
+		            loadUrl: 'formulario.html' //Uses jQuery.load()
+		    	});
+		    });
         });
     })(jQuery);
 </script>
@@ -99,7 +104,7 @@
 	<div id="wrapper">
 		<header id="header" class="clearfix">
 		    <nav id="lg-nav">
-		    	
+
 		    </nav>
 		</header>
 		<div class="cont-site col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
@@ -111,7 +116,7 @@
 							<h3>Santiago de Chile, 17, 18 y 19 de marzo</h3>
 							<h3>Auditorio [nombre auditorio], Universidad de Los Andes</h3>
 							<div class="cont-button clearfix">
-								<a href="#" class="descargar">Inscripciones al Congreso</a>
+								<a href="#" class="descargar inscripciones" id="inscripciones" data-bpopup='{"contentContainer":".content","loadUrl":"formulario.html"}'>Inscripciones al Congreso</a>
 							</div>
 						</div>
 					</div>
@@ -528,6 +533,10 @@
         <div class="content">
         	<h4>Dra. Rosemary Seelaus</h4>
         </div>
+    </div>
+    <div id="form-inscripcion" class="hidden-div bMulti bform">
+    	<div class="content clearfix">
+    	</div>
     </div>
     <!--/POPUP-->
 </body>

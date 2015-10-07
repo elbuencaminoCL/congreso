@@ -1,6 +1,6 @@
 // LESS
 /*MAIN STYLES*/
-@base-blue: #1a72bc;
+@base-blue: #06f;
 @foot-blue: #456073;
 @light-blue: #cfdae5;
 @white: #fff;
@@ -22,6 +22,7 @@
 body {font-family:@family;}
 h3 {margin:0 0 50px; font-size:25px; font-weight:600; color:@base-blue; text-transform:uppercase; line-height:140%;}
 h4 {color:@base-blue;}
+a {color:@base-blue;}
 a:hover {text-decoration:none;}
 .cont-site {padding:0;}
 
@@ -68,7 +69,7 @@ header {
 	.cont-expositores {padding:0;}
 	.item-expo {margin:0 0 70px;}
 	.cont-image {margin:0 0 20px; max-height:275px; overflow:hidden; .rounded-corners (@radius:10px);}
-	img {.rounded-corners (@radius:10px);}
+	.cont-image img {width:100%; .rounded-corners (@radius:10px);}
 }
 #organizadores, #auspiciadores {padding:80px 0 90px; text-align:center; border-bottom:1px solid @border-grey;}
 #organizadores {
@@ -119,15 +120,31 @@ header {
 	.cont-layer {position:relative; padding:90px 0 40px; background:url(../imag/back/bg-section.png) repeat left top; z-index:800; min-height:740px; text-align:center;}
 	.recuadro {margin:70px 0;}
 	.recuadro {
-		h4 {font-size:16px; font-weight:600;}
+		h4 {font-size:16px; font-weight:700;}
 		.img-ubica {margin:0 auto 20px; max-width:175px; width:175px; max-height:175px; height:175px; overflow:hidden;}
 		.img-ubica img {margin:0 auto; border:1px solid @border-grey; .rounded-corners (@radius:5px); height:175px; width:auto;}
+		a:hover {color:@pink;}
 	}
 }
 .cont-button {display:block; margin:0;}
 .cont-button {
 	a.descargar {display:inline-block; padding:8px 30px; font-size:13px; font-weight:700; .rounded-corners (@radius:5px); border:2px solid @base-blue; text-transform:uppercase;}
 	a.descargar:hover {background:@pink; color:@white !important; border:2px solid @pink;}
+}
+
+/*FORMS*/
+.bform {width:650px !important; background:@back-grey !important;}
+.cont-formulario {width:600px; padding:0 0 80px;}
+.cont-formulario {
+	h3.title {margin:10px 0 30px; text-align:center;}
+	.excerpt {margin:0 0 20px; font-size:14px; text-align:center; color:@base-blue;}
+	.separa {margin:0 0 30px;}
+	.separa {
+		div:first-child {padding-left:0;}
+		div:last-child {padding-right:0;}
+	}
+	label {margin:0; padding:0 0 8px; font-size:14px; color:@dark-grey; font-weight:400; text-align:left;}
+	input[type="text"], input[type="email"], select {padding:5px 10px; font-size:14px; color:@medium-grey; height:40px;}
 }
 
 /*AUXI STYLES*/
@@ -141,7 +158,7 @@ header {
     box-shadow:0 0 25px 5px #999; color:#111;
     display:none;
     min-width:450px;
-    max-width:600px;
+    max-width:700px;
     padding:25px 25px 35px;
 }
 .bMulti {

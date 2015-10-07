@@ -7,12 +7,15 @@ h3 {
   margin: 0 0 50px;
   font-size: 25px;
   font-weight: 600;
-  color: #1a72bc;
+  color: #0066ff;
   text-transform: uppercase;
   line-height: 140%;
 }
 h4 {
-  color: #1a72bc;
+  color: #0066ff;
+}
+a {
+  color: #0066ff;
 }
 a:hover {
   text-decoration: none;
@@ -132,7 +135,7 @@ header {
   font-weight: 700;
 }
 #expositores h4 a {
-  color: #1a72bc;
+  color: #0066ff;
 }
 #expositores h4 a:hover {
   color: #c96565;
@@ -158,7 +161,8 @@ header {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-#expositores img {
+#expositores .cont-image img {
+  width: 100%;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -291,7 +295,7 @@ header {
   margin: 0 0 30px;
   font-size: 18px;
   font-weight: 600;
-  color: #1a72bc;
+  color: #0066ff;
 }
 #social .cont-description p {
   margin: 0 0 30px;
@@ -331,7 +335,7 @@ header {
 }
 #ubicacion .recuadro h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 #ubicacion .recuadro .img-ubica {
   margin: 0 auto 20px;
@@ -352,6 +356,9 @@ header {
   height: 175px;
   width: auto;
 }
+#ubicacion .recuadro a:hover {
+  color: #c96565;
+}
 .cont-button {
   display: block;
   margin: 0;
@@ -366,13 +373,57 @@ header {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  border: 2px solid #1a72bc;
+  border: 2px solid #0066ff;
   text-transform: uppercase;
 }
 .cont-button a.descargar:hover {
   background: #c96565;
   color: #ffffff !important;
   border: 2px solid #c96565;
+}
+/*FORMS*/
+.bform {
+  width: 650px !important;
+  background: #eae8e8 !important;
+}
+.cont-formulario {
+  width: 600px;
+  padding: 0 0 80px;
+}
+.cont-formulario h3.title {
+  margin: 10px 0 30px;
+  text-align: center;
+}
+.cont-formulario .excerpt {
+  margin: 0 0 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #0066ff;
+}
+.cont-formulario .separa {
+  margin: 0 0 30px;
+}
+.cont-formulario .separa div:first-child {
+  padding-left: 0;
+}
+.cont-formulario .separa div:last-child {
+  padding-right: 0;
+}
+.cont-formulario label {
+  margin: 0;
+  padding: 0 0 8px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  text-align: left;
+}
+.cont-formulario input[type="text"],
+.cont-formulario input[type="email"],
+.cont-formulario select {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #666666;
+  height: 40px;
 }
 /*AUXI STYLES*/
 .hidden-div {
@@ -420,7 +471,7 @@ header {
   color: #111;
   display: none;
   min-width: 450px;
-  max-width: 600px;
+  max-width: 700px;
   padding: 25px 25px 35px;
 }
 .bMulti h4 {
