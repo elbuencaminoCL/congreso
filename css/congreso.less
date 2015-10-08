@@ -42,6 +42,7 @@ header {
 		ul li {display:inline-block; list-style-type:none; color:@white; text-transform:uppercase;}
 		a, #form-contact {padding:0 10px; color:@white; font-size:16px; text-transform:uppercase; cursor:pointer;}
 		a:hover {color:@base-blue; background:none;}
+		.nav > li > a:hover, .nav > li > a:focus {background:none;}
 	}
 	#main-nav.affix {position:fixed; top:0px; width:100%; z-index:1000; height:47px;}
 	.navbar {margin:0; min-height:auto;}
@@ -95,7 +96,7 @@ header {
 	.cont-descarga {
 		p {margin:0 50px 40px;}
 		a {display:block; color:@dark-grey;}
-		a:hover {color:@pink;}
+		a:hover {color:@base-blue;}
 	}
 }
 #social {padding:90px 0; text-align:center; border-bottom:1px solid @border-grey;}
@@ -132,8 +133,8 @@ header {
 }
 .cont-button {display:block; margin:0;}
 .cont-button {
-	a.descargar {display:inline-block; padding:8px 30px; font-size:13px; font-weight:700; .rounded-corners (@radius:5px); border:2px solid @base-blue; text-transform:uppercase;}
-	a.descargar:hover {background:@pink; color:@white !important; border:2px solid @pink;}
+	a.descargar, input.descargar {display:inline-block; padding:8px 30px; font-size:13px; font-weight:700; .rounded-corners (@radius:5px); border:2px solid @base-blue; text-transform:uppercase;}
+	a.descargar:hover, input.descargar:hover {background:@base-blue; color:@white !important; border:2px solid @base-blue;}
 }
 
 /*FORMS*/
@@ -150,35 +151,35 @@ header {
 	}
 	label {margin:0; padding:0 0 8px; font-size:14px; color:@dark-grey; font-weight:400; text-align:left;}
 	input[type="text"], input[type="email"], input[type="telefono"], select {padding:5px 10px; font-size:14px; color:@medium-grey; height:40px;}
+	textarea {width:100%; padding:5px 10px; font-size:14px; color:@medium-grey; height:150px; border:1px solid #ccc; .rounded-corners (@radius:4px);}
+	input[type="submit"].descargar {margin-bottom:0; background:@base-blue; color:@white;}
+	input[type="submit"].descargar:hover {background:@pink; border:2px solid @pink;}
+	.form-contacto .cont-button {margin-bottom:0;}
 	.cont-button {margin:0 0 50px; text-align:center;}
 	.cont-button a {margin:0 auto; background:@base-blue; color:@white;}
-	.cont-button a:hover {background:@pink;}
+	.cont-button a:hover {background:@pink; border:2px solid @pink;}
+	.cabecera {margin:15px 0 0; padding:12px 0; background:@white; font-size:13px; font-weight:600;}
+	.cabecera div:last-child, .cabecera div:nth-child(2) {padding:0}
 	.content-valores {margin:0 0 50px;}
 	.content-valores {
 		h4 {margin-bottom:25px;}
 		p {margin:0 0 5px;}
+		.clearfix {padding:12px 0; font-size:13px;}
 	}
 }
 
 /*AUXI STYLES*/
 .hidden-div {display:none;}
-.b-close {border-radius:7px; font:bold 131% sans-serif; padding:0 6px 2px; background-color:#2b91af; color:#fff; cursor:pointer; text-align:center; text-decoration:none; position:absolute; right:-7px; top:-7px;}
-.b-close:hover {background-color:#1e1e1e;}
-#cv-johan, #cv-jana, #cv-hadi, #cv-harry, #cv-luciano, #cv-freddy, #cv-rosemary, #cv-trevor, .bMulti {min-height: 250px;}
-#cv-johan, #cv-jana, #cv-hadi, #cv-harry, #cv-luciano, #cv-freddy, #cv-rosemary, #cv-trevor, .bMulti {
-    background-color:#fff;
-    border-radius:10px 10px 10px 10px;
-    box-shadow:0 0 25px 5px #999; color:#111;
-    display:none;
-    min-width:450px;
-    max-width:700px;
-    padding:25px 25px 35px;
-}
+#cboxClose {border-radius:4px; padding:5px 15px !important; text-transform:uppercase; font-weight:600; background:none; color:@base-blue; cursor:pointer; text-align:center; font-size:12px; text-decoration:none; border:2px solid @base-blue !important; position:absolute; right:0px; top:0px;}
+#cboxClose:hover, .b-close:hover {background:@base-blue; color:@white;}
+.b-close {border-radius:4px; padding:5px 15px !important; text-transform:uppercase; font-weight:600; background:none; color:@base-blue; cursor:pointer; text-align:center; font-size:12px; text-decoration:none; border:2px solid @base-blue !important; position:absolute; right:30px; top:30px;}
 .bMulti {
 	h4 {margin:5px 0 30px; font-size:25px; font-weight:600;}
 	p {font-size:13px;}
 }
 .b-modal {background-color:#293e4f !important;}
+#cv-johan, #cv-jana, #cv-hadi, #cv-harry, #cv-luciano, #cv-freddy, #cv-rosemary, #cv-trevor, .bMulti {min-height: 250px;}
+#cv-johan, #cv-jana, #cv-hadi, #cv-harry, #cv-luciano, #cv-freddy, #cv-rosemary, #cv-trevor, .bMulti {background-color:#fff; .rounded-corners (@radius:10px); box-shadow:0 0 25px 5px #999; color:#111; display:none; min-width:450px; max-width:700px; padding:25px 25px 35px;}
 
 /*FOOTER*/
 footer {width:100%; display:block; padding:35px 0; background:@foot-blue; color:@white; clear:both;}

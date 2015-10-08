@@ -78,6 +78,10 @@ header {
   color: #0066ff;
   background: none;
 }
+#inicio #main-nav .nav > li > a:hover,
+#inicio #main-nav .nav > li > a:focus {
+  background: none;
+}
 #inicio #main-nav.affix {
   position: fixed;
   top: 0px;
@@ -248,7 +252,7 @@ header {
   color: #333333;
 }
 #bases .cont-descarga a:hover {
-  color: #c96565;
+  color: #0066ff;
 }
 #social {
   padding: 90px 0;
@@ -381,7 +385,8 @@ header {
   display: block;
   margin: 0;
 }
-.cont-button a.descargar {
+.cont-button a.descargar,
+.cont-button input.descargar {
   display: inline-block;
   padding: 8px 30px;
   font-size: 13px;
@@ -394,10 +399,11 @@ header {
   border: 2px solid #0066ff;
   text-transform: uppercase;
 }
-.cont-button a.descargar:hover {
-  background: #c96565;
+.cont-button a.descargar:hover,
+.cont-button input.descargar:hover {
+  background: #0066ff;
   color: #ffffff !important;
-  border: 2px solid #c96565;
+  border: 2px solid #0066ff;
 }
 /*FORMS*/
 .bform {
@@ -406,7 +412,7 @@ header {
 }
 .cont-formulario {
   width: 600px;
-  padding: 0 0 80px;
+  padding: 0;
 }
 .cont-formulario h3.title {
   margin: 10px 0 30px;
@@ -447,6 +453,31 @@ header {
   color: #666666;
   height: 40px;
 }
+.cont-formulario textarea {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #666666;
+  height: 150px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.cont-formulario input[type="submit"].descargar {
+  margin-bottom: 0;
+  background: #0066ff;
+  color: #ffffff;
+}
+.cont-formulario input[type="submit"].descargar:hover {
+  background: #c96565;
+  border: 2px solid #c96565;
+}
+.cont-formulario .form-contacto .cont-button {
+  margin-bottom: 0;
+}
 .cont-formulario .cont-button {
   margin: 0 0 50px;
   text-align: center;
@@ -458,6 +489,17 @@ header {
 }
 .cont-formulario .cont-button a:hover {
   background: #c96565;
+  border: 2px solid #c96565;
+}
+.cont-formulario .cabecera {
+  margin: 15px 0 0;
+  padding: 12px 0;
+  background: #ffffff;
+  font-weight: 600;
+}
+.cont-formulario .cabecera div:last-child,
+.cont-formulario .cabecera div:nth-child(2) {
+  padding: 0;
 }
 .cont-formulario .content-valores {
   margin: 0 0 50px;
@@ -468,25 +510,61 @@ header {
 .cont-formulario .content-valores p {
   margin: 0 0 5px;
 }
+.cont-formulario .content-valores .clearfix {
+  padding: 12px 0;
+  font-size: 13px;
+}
 /*AUXI STYLES*/
 .hidden-div {
   display: none;
 }
-.b-close {
-  border-radius: 7px;
-  font: bold 131% sans-serif;
-  padding: 0 6px 2px;
-  background-color: #2b91af;
-  color: #fff;
+#cboxClose {
+  border-radius: 4px;
+  padding: 5px 15px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: none;
+  color: #0066ff;
   cursor: pointer;
   text-align: center;
+  font-size: 12px;
   text-decoration: none;
+  border: 2px solid #0066ff !important;
   position: absolute;
-  right: -7px;
-  top: -7px;
+  right: 0px;
+  top: 0px;
 }
+#cboxClose:hover,
 .b-close:hover {
-  background-color: #1e1e1e;
+  background: #0066ff;
+  color: #ffffff;
+}
+.b-close {
+  border-radius: 4px;
+  padding: 5px 15px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: none;
+  color: #0066ff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  border: 2px solid #0066ff !important;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.bMulti h4 {
+  margin: 5px 0 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.bMulti p {
+  font-size: 13px;
+}
+.b-modal {
+  background-color: #293e4f !important;
 }
 #cv-johan,
 #cv-jana,
@@ -509,24 +587,17 @@ header {
 #cv-trevor,
 .bMulti {
   background-color: #fff;
-  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
   box-shadow: 0 0 25px 5px #999;
   color: #111;
   display: none;
   min-width: 450px;
   max-width: 700px;
   padding: 25px 25px 35px;
-}
-.bMulti h4 {
-  margin: 5px 0 30px;
-  font-size: 25px;
-  font-weight: 600;
-}
-.bMulti p {
-  font-size: 13px;
-}
-.b-modal {
-  background-color: #293e4f !important;
 }
 /*FOOTER*/
 footer {

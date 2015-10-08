@@ -78,8 +78,6 @@ html[xmlns] .clearfix {display:block;}
         #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
         #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
         #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
-        #cboxClose {border-radius:7px; font:bold 131% sans-serif; padding:0 6px 2px; background-color:#2b91af; color:#fff; cursor:pointer; text-align:center; text-decoration:none; position:absolute; right:-7px; top:-7px;}
-
 /*
   The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
   when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
