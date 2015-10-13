@@ -289,14 +289,14 @@ header {
   width: 100%;
   padding: 0 70px;
   color: #ffffff;
-  bottom: 20px;
+  bottom: 25px;
   text-align: center;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 600;
+  font-size: 20px;
   z-index: 900;
 }
 #social .item-social a:hover h4 {
-  text-dcoration: underline;
+  text-decoration: underline;
 }
 #social .item-social .shadow {
   position: absolute;
